@@ -1,0 +1,16 @@
+[
+  {
+    "name": "task list has a useful empty state",
+    "steps": [
+      { "send": { "text": "/start" }, "expect": [{ "method": "sendMessage" }] },
+      { "send": { "callback": "task:list" }, "expect": [{ "method": "editMessageText", "payload": { "text": "No tasks in “My Inbox” yet — tap Add task to create one." } }] }
+    ]
+  },
+  {
+    "name": "notification settings can be changed", 
+    "steps": [
+      { "send": { "callback": "settings:show" }, "expect": [{ "method": "editMessageText", "payload": { "text": "Task notifications are on." } }] },
+      { "send": { "callback": "settings:notifications" }, "expect": [{ "method": "editMessageText", "payload": { "text": "Task notifications are now off." } }] }
+    ]
+  }
+]

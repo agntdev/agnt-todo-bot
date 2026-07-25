@@ -5,9 +5,9 @@
       {
         "expect": [
           {
-            "method": "sendMessage",
+            "method": "editMessageText",
             "payload": {
-              "text": "Create task with title, description, and optional due date/assignee"
+              "text": "What needs doing?"
             }
           }
         ],
