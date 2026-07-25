@@ -5,9 +5,9 @@
       {
         "expect": [
           {
-            "method": "sendMessage",
+            "method": "editMessageText",
             "payload": {
-              "text": "Generate new personal or shared task list"
+              "text": "Choose who can use the new list."
             }
           }
         ],

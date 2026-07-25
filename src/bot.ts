@@ -6,7 +6,9 @@ import type { StorageAdapter } from "grammy";
 // bot grows. Durable domain data must NOT live here — use the toolkit's
 // persistent storage (see AGENTS.md).
 export interface Session {
-  // example: step?: "awaiting_amount";
+  /** Conversation state and the user's indexed TodoFlow records. The toolkit
+   * persists this through Redis in Node and a Durable Object in Workers. */
+  todo?: import("./todo-data.js").UserTodoData;
 }
 
 export type Ctx = BotContext<Session>;

@@ -5,9 +5,9 @@
       {
         "expect": [
           {
-            "method": "sendMessage",
+            "method": "editMessageText",
             "payload": {
-              "text": "Add/remove members or modify roles"
+              "text": "This is a personal list. Create a shared list to invite teammates."
             }
           }
         ],

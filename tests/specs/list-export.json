@@ -1,0 +1,8 @@
+[
+  {
+    "name": "owner can export an empty inbox as JSON",
+    "steps": [
+      { "send": { "callback": "list:export" }, "expect": [{ "method": "sendMessage" }, { "method": "editMessageText", "payload": { "text": "Your list data is ready in JSON above." } }] }
+    ]
+  }
+]

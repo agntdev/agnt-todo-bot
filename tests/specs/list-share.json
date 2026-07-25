@@ -5,9 +5,9 @@
       {
         "expect": [
           {
-            "method": "sendMessage",
+            "method": "editMessageText",
             "payload": {
-              "text": "Generate invite link or send handle-based invitation"
+              "text": "Make a shared list first, then invite teammates to it."
             }
           }
         ],
